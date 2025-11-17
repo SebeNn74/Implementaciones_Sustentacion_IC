@@ -4,7 +4,7 @@ Este proyecto hace parte de la sustentación del cohorte y corresponde a la expo
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 Implementar de manera práctica el algoritmo EM sin utilizar librerías externas de clustering (como `sklearn.mixture.GaussianMixture`) para demostrar comprensión del método, su formulación matemática y su aplicación a problemas reales de agrupamiento.
 
 El proyecto incluye:
@@ -16,7 +16,7 @@ El proyecto incluye:
 
 ---
 
-## 📚 Descripción del Algoritmo
+## Descripción del Algoritmo
 
 El **Expectation–Maximization** es un método iterativo para estimar parámetros en modelos con **variables ocultas**. En este proyecto, EM se utiliza para ajustar un modelo de **mezcla de gaussianas**, donde la variable oculta es la pertenencia de cada punto a un cluster.
 
@@ -36,7 +36,7 @@ Medir qué tan bien el modelo explica los datos y detener cuando converge.
 
 ---
 
-## 🧠 Modelo Implementado
+## Modelo Implementado
 La mezcla de gaussianas está definida por:
 
 - \( \pi_j \): peso del componente j  
@@ -54,9 +54,23 @@ EM estima todos los parámetros maximizando la verosimilitud del modelo.
 
 ---
 
-# 🧩 Estructura
-📁 EM ALgorithm/
+# Estructura
+EM ALgorithm/
 │── em_gmm.py # Implementación completa del algoritmo EM
 │── test_EM_K-means.py # Script de pruebas y comparación con K-Means
 │── README.md # Este documento
 └── data/ # (Opcional) Datos adicionales para pruebas
+
+
+## Requisitos
+
+- Python 3.8 o superior
+- Librerías:
+  - numpy
+  - matplotlib
+  - sklearn (solo para generar datos y comparar con K-Means)
+
+Instalación de dependencias:
+
+```bash
+pip install numpy matplotlib scikit-learn
