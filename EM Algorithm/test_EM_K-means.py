@@ -51,11 +51,11 @@ plt.figure(figsize=(12,5))
 
 plt.subplot(1,2,1)
 plt.scatter(X[:,0], X[:,1], c=labels_k)
-plt.title("K-means")
+plt.title("K-means  -clusters esféricos")
 
 # -------- Gráfica de EM --------
 plt.subplot(1,2,2)
 plt.scatter(X[:,0], X[:,1], c=labels_em)
-plt.title("EM (GMM desde cero)")
+plt.title("EM (GMM)-clusters elípticos")
 
 plt.show()
